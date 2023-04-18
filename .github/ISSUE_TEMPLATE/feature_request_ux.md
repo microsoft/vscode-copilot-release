@@ -1,9 +1,9 @@
 ---
-name: AI model issues
-about: The public issue tracker is not for AI model issues.
-
+name: Feature request - UX
+about: File a feature request for the Copilot UX in VS Code
 ---
 
-🚨 The issue tracker is not for model-related issues 🚨
+<!-- Please search existing issues to avoid creating duplicates -->
+<!-- Please test using the latest insiders build to make sure your issue has not already been implemented: https://code.visualstudio.com/insiders/ -->
 
-If you'd like to file an issue for Copilot's AI model, please complete the [VS Code Copilot survey](https://aka.ms/vscode-copilot-survey).
+<!-- Describe the feature you'd like. -->
