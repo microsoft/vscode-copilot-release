@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: AI model - Issues
+    url: https://aka.ms/vscode-copilot-survey
+    about: The issue tracker is not for AI model issues - please use the VS Code Copilot survey.
