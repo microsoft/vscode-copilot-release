@@ -1,6 +1,6 @@
 ---
 name: AI model - Issues
-about: The public issue tracker is not for AI model issues.
+about: The issue tracker is not for model issues. Please use the VS Code Copilot survey](https://aka.ms/vscode-copilot-survey).
 
 ---
 
