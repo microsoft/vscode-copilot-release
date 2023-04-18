@@ -1,5 +1,5 @@
 ---
-name: Bug report - UX
+name: UX - Bug report
 about: File a bug for the Copilot UX in VS Code
 ---
 

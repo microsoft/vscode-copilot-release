@@ -1,5 +1,5 @@
 ---
-name: Feature request - UX
+name: UX - Feature request
 about: File a feature request for the Copilot UX in VS Code
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: AI model issues
+name: AI model - Issues
 about: The public issue tracker is not for AI model issues.
 
 ---
