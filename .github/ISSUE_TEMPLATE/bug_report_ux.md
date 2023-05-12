@@ -1,6 +1,6 @@
 ---
 name: UX - Bug report
-about: File a bug for the Copilot UX in VS Code
+about: File a bug for the Copilot Chat UX in VS Code
 ---
 
 <!-- Please search existing issues to avoid creating duplicates -->
