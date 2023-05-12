@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Autocomplete Style Suggestions - Issues
-    url: github.com/orgs/community/discussions/categories/copilot
+    url: https://github.com/orgs/community/discussions/categories/copilot
     about: For general Copilot issues beyond chat, please use the Copilot GitHub Discussions.
   - name: AI Model - Issues
     url: https://aka.ms/vscode-copilot-survey
