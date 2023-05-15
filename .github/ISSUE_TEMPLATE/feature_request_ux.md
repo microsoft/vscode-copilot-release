@@ -1,6 +1,6 @@
 ---
-name: UX - Feature request
-about: File a feature request for the Copilot Chat UX in VS Code
+name: Feature request for GitHub Copilot Chat
+about: Suggest an idea for Copilot Chat's interface in VS Code
 ---
 
 <!-- Please search existing issues to avoid creating duplicates -->
