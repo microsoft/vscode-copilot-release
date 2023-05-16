@@ -1,6 +1,6 @@
 ---
-name: UX - Bug report
-about: File a bug for the Copilot UX in VS Code
+name: Bug report for GitHub Copilot Chat
+about: Create a report to help us improve Copilot Chat's interface in VS Code
 ---
 
 <!-- Please search existing issues to avoid creating duplicates -->

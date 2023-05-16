@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: AI model - Issues
-    url: https://aka.ms/vscode-copilot-survey
-    about: The issue tracker is not for AI model issues - please use the VS Code Copilot survey.
+  - name: Questions
+    url: https://github.com/orgs/community/discussions/categories/copilot
+    about: Please ask and answer questions about GitHub Copilot here
+  - name: Issues for Copilot Inline Suggestions
+    url: https://github.com/orgs/community/discussions/categories/copilot
+    about: Everything related to Copilot's autocomplete-style inline suggestions
