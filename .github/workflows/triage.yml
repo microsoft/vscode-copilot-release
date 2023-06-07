@@ -16,9 +16,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Assign Random User
         run: |
-          users=("lramos15", "roblourens", "digitarald", "jrieken", "ulugbekna", "alexdima")
+          users=("lramos15" "roblourens" "digitarald" "jrieken" "ulugbekna" "alexdima")
           random_user=${users[$RANDOM % ${#users[@]}]}
           echo "Assigning issue to $random_user"
-          gh issue update ${{ github.event.issue.number }} --assignee $random_user --repo ${{ github.repository }}
+          gh issue edit ${{ github.event.issue.number }} --add-assignee $random_user --repo ${{ github.repository }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
