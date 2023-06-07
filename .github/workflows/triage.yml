@@ -1,4 +1,4 @@
-name: Assign Triage Label and Random User
+name: Random Triage
 
 on:
   issues:
