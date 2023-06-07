@@ -9,12 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Assign Triage Label
+        if: ${{ !github.event.issue.labels }}
         uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: triage-needed
           number: ${{ github.event.issue.number }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
       - name: Assign Random User
+        if: ${{ contains(github.event.issue.labels.*.name, 'triage-needed') && !github.event.issue.assignee }}
         run: |
           users=("lramos15" "roblourens" "digitarald" "jrieken" "ulugbekna")
           random_user=${users[$RANDOM % ${#users[@]}]}
