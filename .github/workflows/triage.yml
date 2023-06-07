@@ -1,0 +1,24 @@
+name: Assign Triage Label and Random User
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign Triage Label
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          labels: triage-needed
+          number: ${{ github.event.issue.number }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Assign Random User
+        run: |
+          users=("lramos15" "roblourens" "digitarald", "jrieken", "ulugbekna", "alexdima")
+          random_user=${users[$RANDOM % ${#users[@]}]}
+          echo "Assigning issue to $random_user"
+          gh issue update ${{ github.event.issue.number }} --assignee $random_user --repo ${{ github.repository }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
