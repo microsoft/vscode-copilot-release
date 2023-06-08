@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Assign Triage Label
-        if: ${{ !github.event.issue.labels }}
+        if: ${{ join(github.event.issue.labels) == '' }}
         uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: triage-needed
