@@ -5,19 +5,27 @@ on:
     types: [opened]
 
 jobs:
-  assign:
+  assign_triage_label:
     runs-on: ubuntu-latest
     steps:
       - name: Assign Triage Label
-        if: ${{ !github.event.issue.labels }}
+        if: ${{ join(github.event.issue.labels) == '' && join(github.event.issue.assignees) == '' }}
         uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: triage-needed
           number: ${{ github.event.issue.number }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
+  assign_random_user:
+    needs: assign_triage_label
+    runs-on: ubuntu-latest
+    steps:
       - name: Assign Random User
-        if: ${{ contains(github.event.issue.labels.*.name, 'triage-needed') && !github.event.issue.assignee }}
         run: |
+          if ! gh issue view ${{ github.event.issue.number }} --repo ${{ github.event.repository.full_name }} --json labels | grep "triage-needed"; then
+            echo "Skipping triage assignment since triage-needed label is not present"
+            exit 0
+          fi
           users=("lramos15" "roblourens" "digitarald" "jrieken" "ulugbekna")
           random_user=${users[$RANDOM % ${#users[@]}]}
           echo "Assigning issue to $random_user"
