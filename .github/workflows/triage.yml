@@ -32,3 +32,4 @@ jobs:
           gh issue edit ${{ github.event.issue.number }} --add-assignee $random_user --repo ${{ github.repository }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_DEBUG: true
