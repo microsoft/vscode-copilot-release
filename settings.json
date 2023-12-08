@@ -1,0 +1,11 @@
+{
+    "aws.experiments": {
+        "jsonResourceModification": true
+    },
+    "aws.samcli.enableCodeLenses": true,
+    "aws.samcli.legacyDeploy": true,
+    "codeswing.autoSave": true,
+    "codeswing.showConsole": true,
+    "git.enableSmartCommit": true,
+    "files.autoSave": "afterDelay"
+}
