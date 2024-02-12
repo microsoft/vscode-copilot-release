@@ -1,0 +1,23 @@
+name: Cleanup Triage Label
+
+on:
+  issues:
+    types: [assigned]
+
+permissions:
+  issues: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    - name: Cleanup triage-needed label
+    run: |
+      ISSUE_NUMBER=${{ github.event.issue.number }}
+      ASSIGNER_TYPE=${{ github.event.assignee.type }}
+      LABELS=$(gh issue view $ISSUE_NUMBER --repo ${{ github.event.repository.full_name }} --json labels -q '.labels[].name')
+
+      if [[ $ASSIGNER_TYPE != "Bot" ]] && [[ $LABELS == *"triage-needed"* ]]; then
+        gh issue update $ISSUE_NUMBER --remove-label triage-needed
+      fi
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
