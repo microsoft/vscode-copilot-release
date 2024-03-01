@@ -1,22 +1,28 @@
-# Why does GitHub Copilot Chat ask for permissions to read and write to my repositories?
+# GitHub Copilot Chat authentication requirements
 
-Back in November 2023, GitHub Copilot Chat adopted a new service, also by GitHub, to search a repository for code snippets using natural language. This service provides the fastest and most accurate search results out of any strategy we use. It may come to no surprise that this service that searches your repositories requires permission to read from them.
+In order to use GitHub Copilot Chat, we require the following permissions from the user:
+* The user's identity - to authenticate the user has access to GitHub Copilot
+* Access to your repositories on GitHub - only applicable in some scenarios, please read on for more information
 
-#### So then why write permission as well?
+## Why does GitHub Copilot Chat ask for permissions to my repositories?
 
-VS Code's GitHub Authentication stack uses a [GitHub OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps) to authenticate users and GitHub Copilot Chat leverages this authentication stack to authenticate. As I mentioned above, this GitHub search service requires read access to your repositories. The only way to do this using GitHub OAuth Apps is by asking for the `repo` scope.
+Copilot Chat uses a service, also provided by GitHub to search a repository for code snippets using natural language. This service improves the speed and quality of chat responses related to the repository you have opened. By definition, this service requires read access to your repositories.
+
+#### What not just ask for read permissions?
+
+VS Code's GitHub Authentication stack uses a [GitHub OAuth App](https://docs.github.com/en/developers/apps/building-oauth-apps) to authenticate users and GitHub Copilot Chat leverages this authentication stack to authenticate. As mentioned above, this GitHub search service requires read access to your repositories. The only way to do this using GitHub OAuth Apps is by asking for the `repo` scope.
 > For a list of all possible scopes, please refer to the [GitHub OAuth Apps documentation](https://docs.github.com/en/developers/apps/building-oauth-apps/scopes-for-oauth-apps).
 
-Unfortunately, the `repo` scope also includes write access to your repositories. This is a limitation of GitHub's OAuth Apps today and thus is the reason why we are asking for read and write access to your repositories. I do want to reiterate that GitHub Copilot Chat will _never_ write to your repositories without your explicit permission and we are only asking for `repo` scope because we need it and have no other alternative to take advantage of the GitHub search service.
+The `repo` scope also includes write access to your repositories. This is a limitation of GitHub's OAuth Apps today and thus is the reason why we are asking for read and write access to your repositories.
 
-Said differently, the authentication flow is _not_ intended to be the gate for opting-in to writing to your repository. The scopes concept are in place so that you can have control over what 3rd party applications have access to. In the first party case, this doesn't really apply because GitHub, the entity, already has write access to your repositories.
+#### What if I don't want to consent to the `repo` scope?
 
-#### What are we doing about this?
-
-On the VS Code side, we only ask for this `repo` scope where it makes sense. We don't need to ask for it if:
+In Copilot Chat, we only ask for this `repo` scope where it makes sense. We don't need to ask for it if:
 * You are using GitHub Copilot but not GitHub Copilot Chat (chat is not enabled)
-* You are working with a public GitHub repository (which does not need `repo`)
+* You are working with a public GitHub repository (which does not need `repo` scope)
 * You are not working with a GitHub repository
-Finally, if you are still not wanting to consent, you can always cancel the prompt that is shown and the extension will try to work as best as we can.
 
-On the GitHub side, we are talking to other teams at GitHub to explore paths forward to not request for `repo` scope.
+
+If you still don't want to consent, you can cancel the prompt that is shown and the extension will still function, though with reduced quality and performance in some scenarios.
+
+When a solution is available to reduce the scope of permissions required, we will update the extension to use the new solution.
