@@ -13,3 +13,7 @@ You can use this repository to file issues on the UX and UI for Copilot Chat in 
 * Report a problem if you don't find what you are looking for.
 
 If you'd like to report an issue for autocomplete-style suggestions, please use the [GitHub Copilot Discussions](https://github.com/orgs/community/discussions/categories/copilot). If you'd like to report an issue with the AI model, please instead use the [VS Code Copilot survey](https://aka.ms/vscode-copilot-survey).
+
+# New Indexing Feature for Navigating Chat History
+
+We have introduced a new feature that allows you to quickly navigate to previously asked questions in the chat using an indexing system. This feature pairs each chat request with a link to its response, making it easier to find and revisit past conversations. The indexed questions and responses are displayed in a sidebar, and you can click on any question to navigate to the corresponding response in the chat. This feature aims to enhance the user experience by eliminating the need to scroll through the conversation and reducing the likelihood of repeating questions.
