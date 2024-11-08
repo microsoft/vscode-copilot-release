@@ -1,4 +1,4 @@
-# GitHub Copilot Chat in Visual Studio Code
+sudo su # GitHub Copilot Chat in Visual Studio Code
 
 This repository is for providing feedback on the Copilot Chat UX in VS Code. You can use the repository to report issues or submit feature requests on the chat user experience and interface.
 
