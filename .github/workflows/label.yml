@@ -12,13 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Close and Mark as Duplicate
-        if: ${{ github.event.label.name == 'rate-limiting' || github.event.label.name == 'rai-content-filters' || github.event.label.name == 'public-code-blocking' || github.event.label.name == 'infinite-response-loops' }}
+        if: ${{ github.event.label.name == 'rate-limiting' || github.event.label.name == 'rai-content-filters' || github.event.label.name == 'public-code-blocking' || github.event.label.name == 'infinite-response-loop' }}
         run: |
           declare -A label_to_issue_map=(
             ["rate-limiting"]="2627"
             ["rai-content-filters"]="2625"
             ["public-code-blocking"]="2626"
-            ["infinite-response-loops"]="2628"
+            ["infinite-response-loop"]="2628"
           )
 
           label_name="${{ github.event.label.name }}"
