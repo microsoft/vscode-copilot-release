@@ -1,0 +1,32 @@
+name: Label Duplicate
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  issues: write
+
+jobs:
+  close_and_mark_duplicate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close and Mark as Duplicate
+        if: ${{ github.event.label.name == 'rate-limiting' || github.event.label.name == 'rai-content-filters' || github.event.label.name == 'public-code-blocking' || github.event.label.name == 'infinite-response-loop' }}
+        run: |
+          declare -A label_to_issue_map=(
+            ["rate-limiting"]="2627"
+            ["rai-content-filters"]="2625"
+            ["public-code-blocking"]="2626"
+            ["infinite-response-loop"]="2628"
+          )
+
+          label_name="${{ github.event.label.name }}"
+          duplicate_issue_number="${label_to_issue_map[$label_name]}"
+          duplicate_issue_url="https://github.com/microsoft/vscode-copilot-release/issues/${duplicate_issue_number}"
+          gh issue comment ${{ github.event.issue.number }} --body "Thanks for creating this issue! We figured it's covering the same as another one we already have: [${duplicate_issue_url}](${duplicate_issue_url}). Please refer to that one for updates and discussions. Feel free to open a new issue if you think this is a different problem."  --repo ${{ github.repository }}
+          gh issue edit ${{ github.event.issue.number }} --add-label "duplicate" --repo ${{ github.repository }}
+          gh issue close ${{ github.event.issue.number }} --reason "not planned" --repo ${{ github.repository }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
