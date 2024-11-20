@@ -13,3 +13,10 @@ You can use this repository to file issues on the UX and UI for Copilot Chat in 
 * Report a problem if you don't find what you are looking for.
 
 If you'd like to report an issue for autocomplete-style suggestions, please use the [GitHub Copilot Discussions](https://github.com/orgs/community/discussions/categories/copilot). If you'd like to report an issue with the AI model, please instead use the [VS Code Copilot survey](https://aka.ms/vscode-copilot-survey).
+echo "# Desktop" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/gagansuryateja/Desktop.git
+git push -u origin main
