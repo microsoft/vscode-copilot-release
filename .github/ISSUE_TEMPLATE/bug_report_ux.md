@@ -2,16 +2,28 @@
 name: Bug report for GitHub Copilot Chat
 about: Create a report to help us improve Copilot Chat's interface in VS Code
 ---
-
-<!-- Please search existing issues to avoid creating duplicates -->
-<!-- Please attach logs to help us diagnose your issue -->
-
-- Copilot Chat Extension Version:
+- Did you search for existing issues: (YES/NO)
+- Did you check the logs and attach*: (YES/NO)
+   
+- Copilot Chat Extension Version**:
 - VS Code Version:
 - OS Version:
 - Logs:
 
-Steps to Reproduce:
+#### Current Behaviour: 
+- 
+#### Expected Behaviour:
+- 
 
-1.
+<!-- Please give as much details as you can, so that it is easily reproducable -->
+#### Steps to Reproduce:
+1. 
 2.
+3.
+4.
+
+
+<!-- 
+* How to check logs explained in this url: https://docs.github.com/en/copilot/troubleshooting-github-copilot/viewing-logs-for-github-copilot-in-your-environment?tool=vscode  
+** You can check the version from extensions tab on Activity Bar
+-->
