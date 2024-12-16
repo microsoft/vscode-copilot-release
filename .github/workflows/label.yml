@@ -19,6 +19,7 @@ jobs:
             ["~rai-content-filters"]="2625"
             ["~public-code-blocking"]="2626"
             ["~infinite-response-loop"]="2628"
+            ["~lm-unavailable"]="2116"
           )
 
           label_name="${{ github.event.label.name }}"
