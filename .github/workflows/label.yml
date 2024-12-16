@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Close and Mark as Duplicate
-        if: ${{ github.event.label.name == '~rate-limiting' || github.event.label.name == '~rai-content-filters' || github.event.label.name == '~public-code-blocking' || github.event.label.name == '~infinite-response-loop' }}
+        if: ${{ github.event.label.name == '~rate-limiting' || github.event.label.name == '~rai-content-filters' || github.event.label.name == '~public-code-blocking' || github.event.label.name == '~infinite-response-loop' || github.event.label.name == '~lm-unavailable' }}
         run: |
           declare -A label_to_issue_map=(
             ["~rate-limiting"]="2627"
