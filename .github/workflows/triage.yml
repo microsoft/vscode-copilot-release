@@ -29,7 +29,7 @@ jobs:
             echo "Skipping triage assignment since triage-needed label is not present"
             exit 0
           fi
-          users=("lramos15" "roblourens" "digitarald" "ulugbekna" "jrieken" "aiday-mar" "joyceerhl" "mjbvz" "aeschli" "hediet" "rebornix" "bhavyaus" "TylerLeonhardt", "bamurtaugh", "pierceboggan", "isidorn")
+          users=("lramos15" "roblourens" "digitarald" "ulugbekna" "jrieken" "aiday-mar" "joyceerhl" "mjbvz" "aeschli" "hediet" "rebornix" "bhavyaus" "TylerLeonhardt" "bamurtaugh" "pierceboggan" "isidorn")
           random_user=${users[$RANDOM % ${#users[@]}]}
           echo "Assigning issue to $random_user"
           gh issue edit ${{ github.event.issue.number }} --add-assignee $random_user --repo ${{ github.repository }}
