@@ -41,6 +41,13 @@
 		"comment": "The described behavior is how it is expected to work. If you disagree, please explain what is expected and what is not in more detail. See also our [issue reporting guidelines](https://aka.ms/vscodeissuereporting).\n\nHappy Coding!"
 	},
 	{
+		"type": "label",
+		"name": "invalid",
+		"action": "close",
+		"reason": "not_planned",
+		"commnet": "We closed this issue because it is not actionable. See our [issue reporting guidelines](https://aka.ms/vscodeissuereporting)."
+	},
+	{
 		"type": "comment",
 		"name": "duplicate",
 		"action": "updateLabels",
