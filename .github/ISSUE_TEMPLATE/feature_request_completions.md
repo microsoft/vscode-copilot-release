@@ -1,6 +1,6 @@
 ---
-name: Feature request for GitHub Copilot Chat or completions
-about: Suggest an idea for Copilot's Chat or completions interface in VS Code
+name: Feature request for GitHub Copilot completions
+about: Suggest an idea for Copilot's completions in VS Code
 ---
 
 <!-- Please search existing issues to avoid creating duplicates -->

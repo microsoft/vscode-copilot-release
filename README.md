@@ -5,11 +5,11 @@ This repository is for providing feedback on the GitHub Copilot experience in VS
 - [GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat) is a companion extension to GitHub Copilot that houses experimental chat features.
 - [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) is an auto-complete style experience that provides inline code suggestions as you type, and may include experimental models for code completions.
 
-To learn more about GitHub Copilot, check out our [blog post](https://code.visualstudio.com/blogs/2023/03/30/vscode-copilot).
+Learn more about [GitHub Copilot](https://github.com/features/copilot) in our [docs](https://code.visualstudio.com/docs/copilot/overview).
 
 # Providing Feedback
 
-You can use this repository to file issues on the UX and UI for Copilot Chat and completions in VS Code:
+You can use this repository to file issues for Copilot Chat and completions in VS Code:
 
 * Up-vote a feature or request a new one.
 * Search for existing issues already reported for potential workarounds.
