@@ -1,6 +1,6 @@
 ---
 name: Feature request for GitHub Copilot Chat
-about: Suggest an idea for Copilot's Chat interface in VS Code
+about: Suggest an idea for Copilots's chat interface in VS Code
 ---
 
 <!-- Please search existing issues to avoid creating duplicates -->

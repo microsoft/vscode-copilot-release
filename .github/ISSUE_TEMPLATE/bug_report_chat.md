@@ -1,13 +1,12 @@
 ---
 name: Bug report for GitHub Copilot Chat
-about: Create a report to help us improve Copilot's Chat interface in VS Code
+about: Create a report to help us improve Copilot's chat interface in VS Code
 ---
 
 <!-- Please search existing issues to avoid creating duplicates -->
 <!-- Please attach logs to help us diagnose your issue -->
 
 - Copilot Chat Extension Version:
-- GitHub Copilot Extension Version:
 - VS Code Version:
 - OS Version:
 - Logs:
