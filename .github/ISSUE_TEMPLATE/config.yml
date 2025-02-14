@@ -3,6 +3,3 @@ contact_links:
   - name: Questions
     url: https://github.com/orgs/community/discussions/categories/copilot
     about: Please ask and answer questions about GitHub Copilot here
-  - name: Issues for Copilot Inline Suggestions
-    url: https://github.com/orgs/community/discussions/categories/copilot
-    about: Everything related to Copilot's autocomplete-style inline suggestions
