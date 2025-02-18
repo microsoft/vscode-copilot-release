@@ -1,7 +1,7 @@
 ---
 name: Feature request for GitHub Copilot completions
 about: Suggest an idea for Copilot's completions in VS Code
-labels: ["feature-request", "triage-needed", "~completions"]
+labels: ["feature-request", "triage-needed", "completions"]
 assignees: ["minsa110", "kasavin"]
 ---
 
