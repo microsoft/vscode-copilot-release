@@ -217,5 +217,15 @@
 		"action": "close",
 		"reason": "not_planned",
 		"comment": "This issue is a duplicate of https://github.com/microsoft/vscode-copilot-release/issues/2116. Please refer to that issue for updates and discussions. Feel free to open a new issue if you think this is a different problem."
+	},
+	{
+		"type": "label",
+		"name": "~completions",
+		"addLabel": "completions",
+		"removeLabel": "~completions",
+		"assign": [
+			"minsa110",
+			"kasavin"
+		]
 	}
 ]
