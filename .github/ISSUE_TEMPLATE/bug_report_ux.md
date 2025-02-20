@@ -3,7 +3,7 @@ name: Bug report for GitHub Copilot Chat
 about: Create a report to help us improve Copilot Chat's interface in VS Code
 ---
 - Did you search for existing issues? (Yes/No)
-- Have you attached logs to help diagnose this issue? (YES/NO)
+- Have you attached logs to help diagnose this issue? (Yes/No)
    
 - Copilot Chat Extension Version**:
 - VS Code Version:
