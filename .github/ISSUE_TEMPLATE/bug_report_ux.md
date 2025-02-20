@@ -23,7 +23,6 @@ about: Create a report to help us improve Copilot Chat's interface in VS Code
 3.
 4.
 
-
 <!-- 
 * How to check logs explained in this url: https://docs.github.com/en/copilot/troubleshooting-github-copilot/viewing-logs-for-github-copilot-in-your-environment?tool=vscode  
 ** You can check the version from extensions tab on Activity Bar
