@@ -15,7 +15,8 @@ about: Create a report to help us improve Copilot Chat's interface in VS Code
 #### Expected Behaviour:
 - 
 
-<!-- Please give as much details as you can, so that it is easily reproducable -->
+<!-- Please give as much detail as you can, so that it is easily reproducable -->
+
 #### Steps to Reproduce:
 1. 
 2.
