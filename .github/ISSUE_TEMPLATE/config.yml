@@ -3,3 +3,12 @@ contact_links:
   - name: Questions
     url: https://github.com/orgs/community/discussions/categories/copilot
     about: Please ask and answer questions about GitHub Copilot here
+  - name: Responsible AI Service response blocking
+    url: https://github.com/microsoft/vscode-copilot-release/issues/2625
+    about: See meta-issue for information on RAI response blocking.
+  - name: Request Rate Limiting
+    url: https://github.com/microsoft/vscode-copilot-release/issues/2627
+    about: See meta-issue for scenarios where chat requests are blocked due to rate limiting.
+  - name: Public Code Matching
+    url: https://github.com/microsoft/vscode-copilot-release/issues/2626
+    about: Learn how to enable/disable public code matching in responses via your organizational settings. 
