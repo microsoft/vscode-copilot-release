@@ -227,5 +227,15 @@
 			"minsa110",
 			"kasavin"
 		]
+	},
+	{
+		"type": "label",
+		"name": "~authentication",
+		"addLabel": "authentication",
+		"removeLabel": "~authentication",
+		"action": "close",
+		"reason": "not_planned",
+		"comment": "Please look at the following meta issue: https://github.com/microsoft/vscode-copilot-release/issues/11078, if the bug you are experiencing is not there, please comment on this closed issue thread so we can re-open it.",
+		"assign": ["TylerLeonhardt"]
 	}
 ]
