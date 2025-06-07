@@ -2,13 +2,13 @@
 	"$schema": "https://raw.githubusercontent.com/microsoft/vscode-github-triage-actions/stable/classifier-deep/apply/apply-labels/deep-classifier-config.schema.json",
 	"labels": {
 		"notebook": { "assign": ["rebornix"] },
-        "authentication": { "assign": ["TylerLeonhardt"] },
-        "chat-agent-terminal": { "assign": ["Tyriar"] },
-        "model-byok": { "assign": ["lramos15"] },
-        "model-picker": { "assign": ["lramos15"] },
-        "/new": { "assign": ["bhavyaus"] },
-        "scm-commit": { "assign": ["lszomoru"] },
-        "@workspace": { "assign": ["mjbvz"] },
-        "NES": { "assign": ["hediet", "benibenj"] }
+		"authentication": { "assign": ["TylerLeonhardt"] },
+		"chat-agent-terminal": { "assign": ["Tyriar"] },
+		"model-byok": { "assign": ["lramos15"] },
+		"model-picker": { "assign": ["lramos15"] },
+		"/new": { "assign": ["bhavyaus"] },
+		"scm-commit": { "assign": ["lszomoru"] },
+		"@workspace": { "assign": ["mjbvz"] },
+		"NES": { "assign": ["hediet", "benibenj"] }
 	}
 }
