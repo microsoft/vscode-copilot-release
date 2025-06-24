@@ -146,7 +146,7 @@
 		"action": "updateLabels",
 		"addLabel": "info-needed",
 		"removeLabel": "~info-needed",
-		"comment": "Thanks for creating this issue! We figured it's missing some basic information or in some other way doesn't follow our [issue reporting guidelines](https://aka.ms/vscodeissuereporting). Please take the time to review these and update the issue.\n\nHappy Coding!"
+		"comment": "Thanks for creating this issue! We figured it's missing some basic information, such as a version number, or in some other way doesn't follow our [issue reporting guidelines](https://aka.ms/vscodeissuereporting). Please take the time to review these and update the issue.\n\nFor Copilot Issues, be sure to visit our [Copilot-specific guidelines](https://github.com/microsoft/vscode/wiki/Copilot-Issues) page for details on the necessary information.\n\nHappy Coding!"
 	},
 	{
 		"type": "label",
