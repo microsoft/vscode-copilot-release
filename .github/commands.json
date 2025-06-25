@@ -258,6 +258,16 @@
 	},
 	{
 		"type": "label",
+		"name": "~capi",
+		"addLabel": "capi",
+		"removeLabel": "~capi",
+		"assign": [
+			"samvantran",
+			"thispaul"
+		]
+	},
+	{
+		"type": "label",
 		"name": "notebook",
 		"assign": [
 			"rebornix"
