@@ -1,3 +1,5 @@
+**This repository has been deprecated. Please refer to the [Copilot Chat repository](https://github.com/microsoft/vscode-copilot-chat) for Open Source Contributions, and the [VS Code repository](https://github.com/microsoft/vscode/issues) to provide feedback.**
+
 # GitHub Copilot Chat in Visual Studio Code
 
 This repository is for providing feedback on the GitHub Copilot experience in VS Code, including both Copilot Chat and completions. You can use this repository to report issues or submit feature requests related to the user experience and interface of either extension.
@@ -9,8 +11,6 @@ Learn more about [GitHub Copilot](https://github.com/features/copilot) in our [d
 
 # Providing Feedback
 
-You can use this repository to file issues for Copilot Chat and completions in VS Code:
+This repository has been deprecated as a part of the transition to Open Source. Please direct all feedback to the primary [VS Code repository](https://github.com/microsoft/vscode/issues/new/choose).
 
-* Up-vote a feature or request a new one.
-* Search for existing issues already reported for potential workarounds.
-* Report a problem if you don't find what you are looking for.
+Issues remaining here will be readonly and will be transitioning to that repository.
