@@ -9,6 +9,10 @@ This repository is for providing feedback on the GitHub Copilot experience in VS
 
 Learn more about [GitHub Copilot](https://github.com/features/copilot) in our [docs](https://code.visualstudio.com/docs/copilot/overview).
 
+# Known Issues
+
+For information about known limitations and issues with Copilot Chat functionality, see [Known Issues](docs/known-issues.md).
+
 # Providing Feedback
 
 This repository has been deprecated as a part of the transition to Open Source. Please direct all feedback to the primary [VS Code repository](https://github.com/microsoft/vscode/issues/new/choose).
