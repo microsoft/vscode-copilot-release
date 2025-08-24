@@ -8,11 +8,19 @@ This document tracks known limitations and issues with the GitHub Copilot Chat e
 
 **Problem:** When using the "Copy All" functionality in the Copilot Chat pane, not all content from the conversation is copied. Specifically, CLI commands that were suggested and executed during the chat session are missing from the copied text.
 
+**Example:** In a conversation where Copilot suggests adding an xUnit test project and provides commands like:
+```bash
+cd /Users/adamhill/dev/maui/ai-test-app && dotnet new xunit -n test.Tests
+```
+
+These command blocks are not included when using "Copy All", even though they are visible in the chat interface.
+
 **Symptoms:**
 - Using "Copy All" from the Chat conversation context menu
 - The copied text is incomplete
-- Missing terminal commands that were displayed in the chat
+- Missing terminal commands that were displayed in the chat (e.g., `dotnet`, `cd`, `npm` commands)
 - Missing code blocks or executed command outputs
+- Commands shown in collapsible sections or special formatting are omitted
 
 **Expected Behavior:** 
 The "Copy All" functionality should include all visible content from the chat conversation, including:
